@@ -367,6 +367,7 @@ diag_table:
         fields:
             npp3d:
             pprod_gross:
+            zprod_gross:
             radbio3d:
     'monthly 2d diagnostic BGC fields':
         defaults:  # these can be overridden for individual fields below
@@ -378,10 +379,42 @@ diag_table:
         fields:
             paco2:
             pco2:
+            light_limit:
+            radbio1:
+            det_sed_remin:
+            det_sed_depst:
+            caco3_sed_remin:
+            caco3_sed_depst:
+            npp2d:
+            npp1:
+            pprod_gross_2d:
+            dic_intmld:
+            adic_intmld:
+            o2_intmld:
+            no3_intmld:
+            fe_intmld:
+            phy_intmld:
+            det_intmld:
+            pprod_gross_intmld:
+            npp_intmld:
+            radbio_intmld:
+            dic_int100:
+            adic_int100:
+            o2_int100:
+            no3_int100:
+            fe_int100:
+            phy_int100:
+            det_int100:
+            pprod_gross_int100:
+            npp_int100:
+            radbio_int100:
             stf03: # o2 air-to-sea flux
             stf07: # dic air-to-sea flux
             stf09: # adic air-to-sea flux
+            stf10: # fe air-to-sea flux
             wdet100:
+            det_sediment:
+            caco3_sediment:
     'monthly scalar BGC timeseries snapshots':  # snapshots of global integrals give better parallel performance
         defaults:  # these can be overridden for individual fields below
             file_name_prefix: oceanbgc
